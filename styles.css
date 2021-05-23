@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5;
+}
+
+/* HEADER LOGO */
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    height: 6rem;
+}
+
+header .header__a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #adc743;
+    padding: 0 1rem;
+}
+
+header .header__a h1 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header .header__a span {
+    color: #000;
+    padding-top: .5rem;
+}
+
+/* HEADER NAVBAR */
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 5%;
+}
+
+header nav li {
+    list-style: none;
+    
+}
+
+header nav li a {
+    color: #000000;
+    text-decoration: none;
+    transition: .4s;
+    font-size: 1.2rem;
+}
+
+header nav li a:hover {
+    color: #0000005b;
+}
+
+
+
+/* CUERPO DE LA PAGINA #1 */
+
+/* PARTE SUPERIOR */
+main {
+    width: 100%;
+    height: auto;
+}
+main .main__section1 {
+    background-image: url('./img/comidasverdes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 37rem;
+    position: relative;
+}
+
+main .main__section1 div {
+    background-color: #ffffffce;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 42.2%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main__section1 div h2 {
+    font-size: 2.5rem;
+    width: 50%;
+    font-weight: normal;
+}
+
+main .main__section1 div a {
+    font-size: 1.1rem;
+    margin: 3rem 0 0 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #adc743;
+    padding: .8rem 1rem;
+    transition: 1s;
+}
+
+main .main__section1 div a:hover {
+    background-color: #899c40;
+}
+
+/* PARTE INFERIOR */
+
+main .main__section2 img{
+    height: 25rem;
+    width: 15rem;
+    object-fit: cover;
+}
+
+main .main__section2 .section2__article1 {
+    background-color: red;
+    height: 25rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main__section2 .section2__article1 p {
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+main .main__section2 .section2__article1 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #b1c94d;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER DE LA PAGINA */
+
+footer {
+    width: 100%;
+    height: 15rem;
+    background-image: url('./img/table.jpg');
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%;
+}
+
+footer section {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+footer .se {
+    height: 50%;
+    width: .1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+footer .section1 span {
+    display: inline-block;
+}
+
+footer .section2 span{
+    margin-top: 1rem;
+}
