@@ -68,11 +68,12 @@ header nav li a:hover {
 /* CUERPO DE LA PAGINA #1 */
 
 /* PARTE SUPERIOR */
-main {
+.mainpage1 {
+    display: none;
     width: 100%;
     height: auto;
 }
-main .main__section1 {
+.mainpage1 .main__section1 {
     background-image: url('./img/comidasverdes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +82,7 @@ main .main__section1 {
     position: relative;
 }
 
-main .main__section1 div {
+.mainpage1 .main__section1 div {
     background-color: #ffffffce;
     width: 25%;
     height: 100%;
@@ -93,13 +94,13 @@ main .main__section1 div {
     align-items: center;
 }
 
-main .main__section1 div h2 {
+.mainpage1 .main__section1 div h2 {
     font-size: 2.5rem;
     width: 50%;
     font-weight: normal;
 }
 
-main .main__section1 div a {
+.mainpage1 .main__section1 div a {
     font-size: 1.1rem;
     margin: 3rem 0 0 0;
     text-decoration: none;
@@ -109,37 +110,514 @@ main .main__section1 div a {
     transition: 1s;
 }
 
-main .main__section1 div a:hover {
+.mainpage1 .main__section1 div a:hover {
     background-color: #899c40;
 }
 
 /* PARTE INFERIOR */
 
-main .main__section2 img{
-    height: 25rem;
-    width: 15rem;
-    object-fit: cover;
+.mainpage1 .main__section2 {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(28, 4.5rem);
+    width: 80%;
+    margin: 0 auto;
 }
 
-main .main__section2 .section2__article1 {
-    background-color: red;
-    height: 25rem;
-    width: 40rem;
+/* IMG CHICA*/
+.mainpage1 .main__section2 .chica{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+}
+
+
+/* AREA CONOCE RAQUEL */
+
+.mainpage1 .main__section2 .section2__article1 {
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    grid-column: 5 / 12;
+    grid-row: 1 / 7;
 }
 
-main .main__section2 .section2__article1 p {
+.mainpage1 .main__section2 .section2__article1 div {
     width: 60%;
-    font-size: 1.1rem;
 }
 
-main .main__section2 .section2__article1 a {
-    font-size: 1.3rem;
+.mainpage1 .main__section2 .section2__article1 div h2 {
+    font-weight: normal;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainpage1 .main__section2 .section2__article1 div p {
+    margin-bottom: 2.6rem;
+    font-size: 1rem;
+}
+
+.mainpage1 .main__section2 .section2__article1 div a {
+    font-size: 1.2rem;
     text-decoration: none;
     color: #b1c94d;
 }
+
+/* AREA BLOG */
+
+.mainpage1 .main__section2 .blog {
+    height: 100%;
+    width: 100%;
+    background-color: #aca298;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .4s;
+    grid-column: 3 / 5;
+    grid-row: 7 / 9;
+}
+
+.mainpage1 .main__section2 .blog:hover {
+    background-color: #706961;
+}
+
+.mainpage1 .main__section2 .blog h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+/* AREA RESETAS Y CONSEJOS */
+
+.mainpage1 .main__section2 .section2__article2 {
+    background-color: #adc743;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5 / 12;
+    grid-row: 7 / 11;
+}
+
+.mainpage1 .main__section2 .section2__article2 div {
+    width: 70%;
+    height: 50%;
+    display: inline-block;
+    color: #fff;
+}
+
+.mainpage1 .main__section2 .section2__article2 div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainpage1 .main__section2 .section2__article2 div a h2 {
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+.mainpage1 .main__section2 .section2__article2 div p {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+
+/* IMG ENSALADAS */
+
+.mainpage1 .main__section2 .ensaladas {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 10;
+    grid-row: 11 / 18;
+}
+
+
+/* AREA SERVICIOS */
+
+.mainpage1 .main__section2 .servicios {
+    height: 100%;
+    width: 100%;
+    background-color: #adc743;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .4s;
+    grid-column: 5 / 7;
+    grid-row: 18 / 20;
+}
+
+.mainpage1 .main__section2 .servicios:hover {
+    background-color: #899c40;
+}
+
+.mainpage1 .main__section2 .servicios h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+/* AREA Asesoramiento de Nutrición Familiar & Grupal  */
+
+.mainpage1 .main__section2 .section2__article3 {
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 7 / 12;
+    grid-row: 18 / 22;
+}
+
+.mainpage1 .main__section2 .section2__article3 div {
+    width: 70%;
+    height: 70%;
+    display: inline-block;
+    color: #000;
+}
+
+.mainpage1 .main__section2 .section2__article3 div a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mainpage1 .main__section2 .section2__article3 div a h2 {
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+.mainpage1 .main__section2 .section2__article3 div p {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+
+/* AREA ensafrutas */
+
+.mainpage1 .main__section2 .ensafrutas {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 7;
+    grid-row: 21 / 29;
+}
+
+
+
+
+
+
+
+
+
+/* CUERPO DE LA PAGINA #2 */
+
+/* AREA SOBRE RAQUEL */
+.mainpage2 {
+    display: none;
+}
+.mainpage2 div h2 {
+    background-image: url('./img/table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage2 div h2 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+/* CONTENEDOR GRID */
+.mainpage2 .mainpage2__section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 5rem);
+    min-width: 760px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* AREA IMG */
+
+
+.mainpage2 .mainpage2__section img {
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+    object-fit: cover;
+}
+
+/* AREA MI HISTORIA */
+
+.mainpage2 .mainpage2__section .section__section1 {
+    height: 100%;
+    width: 100%;
+    grid-column: 6 / 13;
+    grid-row: 1 / 8;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage2 .mainpage2__section section div {
+    
+    display: inline-block;
+    height: 80%;
+    width: 75%;
+}
+
+.mainpage2 .mainpage2__section section div h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.mainpage2 .mainpage2__section section div p {
+    font-size: 1.1rem;
+}
+
+/* AREA ESECIALIDADES */
+
+.mainpage2 .mainpage2__section .section__section2 {
+    background-color: #aca298;
+    height: 100%;
+    width: 100%;
+    grid-column: 2 / 6;
+    grid-row: 5 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage2 .mainpage2__section .section__section2 h3 {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.mainpage2 .mainpage2__section .section__section2 span {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/* CUERPO DE LA PAGINA #3 */
+
+.mainpage3 {
+}
+
+/* AREA SERVICIOS */
+
+.mainpage3 div h2 {
+    background-image: url('./img/table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage3 div h2 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+/* AREA BOTONES */
+
+.mainpage3 .mainpage3__botones {
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+.mainpage3 .mainpage3__botones .botones__div {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    width: 13rem;
+    position: absolute;
+}
+
+.mainpage3 .mainpage3__botones .botones__div a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 0 .8rem;
+    font-size: 1.2rem;
+}
+
+.mainpage3 .mainpage3__botones .botones__div .ani1 {
+    height: .1rem;
+    width: 100%;
+    background-color: #d2d2d2;
+    position: absolute;
+    bottom: 0;
+}
+
+.mainpage3 .mainpage3__botones .botones__div .ani2 {
+    height: .2rem;
+    width: 50%;
+    background-color: #adc743;
+    position: absolute;
+    bottom: 0;
+    transition: .5s;
+}
+
+.left {
+    left: calc(0% - 0%);
+}
+
+.right {
+    left: calc(100% - 50%);
+}
+
+
+
+
+
+
+/* CONSULTORIA */
+
+.mainpage3 .mainpage3__productos {
+    /* margin-top: 3rem; */
+    min-width: 760px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 0 auto;
+}
+.grid-cons {
+    grid-template-rows: repeat(2, 27rem);
+}
+
+.grid-clases {
+    grid-template-rows: repeat(1, 27rem);
+}
+
+.a1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.a2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.a3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.a4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.a5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.a6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.mainpage3 .mainpage3__productos .productos__div {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #d2d2d2;
+}
+
+.mainpage3 .mainpage3__productos .productos__div img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainpage3 .mainpage3__productos .productos__div img:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div h3 {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: normal;
+    color: #000000;
+    transition: .4s;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div h3:hover {
+    color: #00000071;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div span {
+    margin-bottom: 1rem;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div a {
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #adc743;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.mainpage3 .mainpage3__productos .productos__div div a:hover {
+    background-color: #c5d77a;
+}
+
+
+
+/* CLASES */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,6 +640,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 0 20%;
+    margin-top: 1rem;
 }
 
 footer section {
