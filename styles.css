@@ -63,16 +63,31 @@ header nav li a:hover {
     color: #0000005b;
 }
 
-
+.apagarnavbar {
+    color: #0000005b;
+}
+body .opacidad {
+    filter: opacity(100%);
+    transition: 1s;
+}
+body .encendido {
+    display: block;
+}
+body .encendido1 {
+    display: grid;
+}
 
 /* CUERPO DE LA PAGINA #1 */
 
 /* PARTE SUPERIOR */
 .mainpage1 {
-    display: none;
     width: 100%;
     height: auto;
+    transition: 1s;
+    filter: opacity(0%);
+    display: none;
 }
+
 .mainpage1 .main__section1 {
     background-image: url('./img/comidasverdes.jpg');
     background-repeat: no-repeat;
@@ -323,6 +338,8 @@ header nav li a:hover {
 /* AREA SOBRE RAQUEL */
 .mainpage2 {
     display: none;
+    transition: 1s;
+    filter: opacity(0%);
 }
 .mainpage2 div h2 {
     background-image: url('./img/table.jpg');
@@ -423,6 +440,8 @@ header nav li a:hover {
 /* CUERPO DE LA PAGINA #3 */
 
 .mainpage3 {
+    filter: opacity(0%);
+    display: none;
 }
 
 /* AREA SERVICIOS */
@@ -508,17 +527,21 @@ header nav li a:hover {
     /* margin-top: 3rem; */
     min-width: 760px;
     width: 90%;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin: 0 auto;
 }
 .grid-cons {
     grid-template-rows: repeat(2, 27rem);
+    filter: opacity(0%);
+    display: none;
 }
 
 .grid-clases {
     grid-template-rows: repeat(1, 27rem);
+    filter: opacity(0%);
+    display: none;
 }
 
 .a1 {
@@ -613,6 +636,174 @@ header nav li a:hover {
 
 
 
+/* CUERPO DE LA PAGINA #4 */
+
+.mainpage4 {
+    filter: opacity(0%);
+    display: none;
+}
+
+.mainpage4 .main__div h2 {
+    background-image: url('./img/table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage4 .main__div h2 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+.mainpage4__contenedor {
+    min-width: 760px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mainpage4__contenedor .main__buscar {
+    height: 6rem;
+    width: 100%;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec {
+    background-color: #f0f0f0;
+    display: flex;
+    height: 23rem;
+    margin-top: 2rem;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec img {
+    object-fit: cover;
+    width: 50%;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte {
+    width: 50%;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 3rem 3rem 1rem 3rem;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte p {
+    font-size: 1.2rem;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte .raya {
+    background-color: #c6c6c6;
+    height: 1px;
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte .vistas {
+    margin: 0 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.mainpage4 .mainpage4__contenedor .contenedor__contenido .contenido__sec .section__conte .vistas span {
+    margin: 0 1rem;
+}
+
+
+
+
+/* CUERPO DE LA PAGINA #4 */
+
+
+
+.mainpage5 {
+    /* filter: opacity(0%);
+    display: none; */
+}
+
+.mainpage5 .main__div h2 {
+    background-image: url('./img/table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage5 .main__div h2 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.mainpage5 section {
+    background-color: red;
+    min-width: 760px;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 5rem);
+}
+
+.mainpage5 section .mainpage5__contacto {
+    background-color: #f0f0f0;
+    grid-column: 1 / 7;
+    grid-row: 1 / 6;
+}
+
+.mainpage5 section .mainpage5__contacto p {
+    margin: 4.5rem 4rem 3rem 4rem;
+}
+
+.mainpage5 section .mainpage5__contacto h3 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin: 0 4rem 1.5rem 4rem;
+}
+
+.mainpage5 section .mainpage5__contacto div {
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAPA */
+.mainpage5 section .mainpage5__map {
+    background-color: blue;
+    grid-column: 7 / 11;
+    grid-row: 3 / 8;
+}
+
+.mainpage5 section form {
+    background-color: rgb(0, 255, 72);
+    grid-column: 2 / 7;
+    grid-row: 6 / 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainpage5 section form label {
+    width: 90%;
+    height: 1.5rem;
+}
+
+.mainpage5 section form label input {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -665,3 +856,10 @@ footer .section1 span {
 footer .section2 span{
     margin-top: 1rem;
 }
+
+
+
+
+
+
+
