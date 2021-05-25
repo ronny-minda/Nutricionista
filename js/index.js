@@ -3,6 +3,7 @@ const mainpage1 = document.querySelector('.mainpage1');
 const mainpage2 = document.querySelector('.mainpage2');
 const mainpage3 = document.querySelector('.mainpage3');
 const mainpage4 = document.querySelector('.mainpage4');
+const mainpage5 = document.querySelector('.mainpage5');
 const btna1 = document.querySelectorAll('.btn-a1');
 const mainpage3__productos = document.querySelectorAll('.mainpage3__productos');
 
@@ -46,8 +47,13 @@ nav[0].addEventListener('click', () => {
     mainpage1.classList.add('encendido');
     mainpage2.classList.remove('encendido');
     mainpage2.classList.remove('opacidad');
+    mainpage4.classList.remove('encendido');
+    mainpage4.classList.remove('opacidad');
+    mainpage5.classList.remove('encendido');
+    mainpage5.classList.remove('opacidad');
     mainpage3.classList.remove('encendido');
     mainpage3.classList.remove('opacidad');
+
 
     setTimeout(function(){
         mainpage1.classList.add('opacidad');
@@ -58,6 +64,8 @@ nav[1].addEventListener('click', () => {
     navBar(1,0,2,3,4);
     
     mainpage2.classList.add('encendido');
+    mainpage5.classList.remove('encendido');
+    mainpage5.classList.remove('opacidad');
     mainpage1.classList.remove('encendido');
     mainpage1.classList.remove('opacidad');
     mainpage3.classList.remove('encendido');
@@ -74,6 +82,8 @@ nav[2].addEventListener('click', () => {
     navBar(2,1,0,3,4);
 
     mainpage3.classList.add('encendido');
+    mainpage5.classList.remove('encendido');
+    mainpage5.classList.remove('opacidad');
     mainpage2.classList.remove('encendido');
     mainpage2.classList.remove('opacidad');
     mainpage1.classList.remove('encendido');
@@ -90,6 +100,8 @@ nav[3].addEventListener('click', () => {
     navBar(3,1,2,0,4);
 
     mainpage4.classList.add('encendido');
+    mainpage5.classList.remove('encendido');
+    mainpage5.classList.remove('opacidad');
     mainpage3.classList.remove('encendido');
     mainpage3.classList.remove('opacidad');
     mainpage2.classList.remove('encendido');
@@ -104,6 +116,21 @@ nav[3].addEventListener('click', () => {
 nav[4].addEventListener('click', () => {
     /* console.log('4'); */
     navBar(4,1,2,3,0);
+
+    mainpage5.classList.add('encendido');
+    mainpage4.classList.remove('encendido');
+    mainpage4.classList.remove('opacidad');
+    mainpage3.classList.remove('encendido');
+    mainpage3.classList.remove('opacidad');
+    mainpage2.classList.remove('encendido');
+    mainpage2.classList.remove('opacidad');
+    mainpage1.classList.remove('encendido');
+    mainpage1.classList.remove('opacidad');
+    
+
+    setTimeout(function(){
+        mainpage5.classList.add('opacidad');
+    }, 1);
 });
 
 /* FUNCION PARA CONTROLAR EL NAVBAR */
